@@ -1,5 +1,28 @@
 export default {
   port: 1337,
   dbUri: 'mongodb://127.0.0.1:27017/auth-api',
-  saltWorkFactor: 10
+  saltWorkFactor: 10,
+  accessTokenTtl: '15m',
+  refreshTokenTtl: '1y',
+  publicKey: `-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDlZ012363ksYrvUQXBPgZcuVoG
+3DlQYJKGMiBf3KuzfKrWZoNTvCAU6fjW5Bj/OBMqfO8UNCj+WTr4hq3olPsoJaQV
+vaUpywqyHOLXxnwSW0HJgWA11sEGyLvPvLqegQ/YwXQ+CQ4JtkJHoauwl6NfKxdd
+CXi2rkxabuZ8kJ+eFwIDAQAB
+-----END PUBLIC KEY-----`,
+  privateKey: `-----BEGIN RSA PRIVATE KEY-----
+MIICXQIBAAKBgQDlZ012363ksYrvUQXBPgZcuVoG3DlQYJKGMiBf3KuzfKrWZoNT
+vCAU6fjW5Bj/OBMqfO8UNCj+WTr4hq3olPsoJaQVvaUpywqyHOLXxnwSW0HJgWA1
+1sEGyLvPvLqegQ/YwXQ+CQ4JtkJHoauwl6NfKxddCXi2rkxabuZ8kJ+eFwIDAQAB
+AoGBALR/+bWk/gBJqhXvXGXWVc8zkCCBux8BPYkVe9+xk/AgEZOtCXwjM+MAzejX
+hMub5Yiy0LLG79Jhh0LxRXkRcCODFAc49HUUiQ65b7iAt9lUJ4p/s24hj/lGIgwx
+JkQgJnAcR85C3hJSdwPvZcqo01NbOmxMCh+I4Y/UxpNxzm3RAkEA+uKhM/5dqf1f
+QN8zCFuYlaGVshTGRCoBseUZTAHag6vYDZA/NQhOmOK7vjOXn62pYx0ZkhbVAP/f
+DyyADL+PswJBAOoUj0WMywgwaBXRnIoEgWCpxU2xBT9p+kkxMbkaH42d6FLJAXI1
+veRnXleSD8f7m2WhuAfgmQ0UHwrSSBfMZg0CQAsNRrqqnuepILQT4QSiPFODHbwN
+jDpee1qh0/50KnMYc9kNHKuyZPv5KPoU/b3sAYU7N/Amj1WO7/2UIUPugF8CQQDl
+uB+SpcVq1/aN0xPI7vr5HiMfR6ZawWp7AehGO7jThjBFbjYZG1ysFjWjwxfxrp6m
+crrkICqThzefqxZNJK7RAkAdOI6uhBaV0aZAlOCAf+Hn5JUSajfid6XdQaTaiMEP
+3gP0WA6caCWHVH0Ljjt0Q2xkHuz44HUxbLPIqVxQLLZG
+-----END RSA PRIVATE KEY-----`
 };
