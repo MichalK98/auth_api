@@ -10,3 +10,10 @@ export async function createSession(userId: string, userAgent: string) {
 export async function findSessions(query: FilterQuery<SessionDocument>) {
   return SessionModel.find(query).lean();
 }
+
+export async function updateSessions(
+  query: FilterQuery<SessionDocument>,
+  update: UpdateQuery<SessionDocument>
+) {
+  return SessionModel.updateOne(query, update);
+}
